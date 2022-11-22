@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover{
+    background-color: white;
+    width: 30em;
+    height: 25em;
+    position: relative;
+    border-radius: 1em;
+    box-shadow: 0 0.188em 1.550em rgb(10, 156, 156);
+    padding: 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{    
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+}
+.container h1 span{
+    color: rgb(10, 156, 156);
+}
+
+.input-box{
+    width: 80%;
+    height: 4em;
+    border: none;
+    border-radius: 10px;
+    padding: 1.3em;
+    background-color: rgb(229, 226, 226);
+    font-size: 1em;
+}
+.input-box:focus{
+    outline-color: rgb(10, 156, 156);
+}
+
+.btns{
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+}
+.btnn{
+    width: 10em;
+    height: fit-content;
+    padding: 1em;
+    background-color: rgb(10, 156, 156);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    border-radius: 1.4em;
+    cursor: pointer;
+    color: black;
+}
+.btnn:hover{
+    transform: scale(1.04);
+}
+
+.hide{
+    display: none;
+}
+
+.login-popup{
+    position: absolute;
+    height: 30em;
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25em;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    transform: scale(1);
+    transform: 1.5s;
+}

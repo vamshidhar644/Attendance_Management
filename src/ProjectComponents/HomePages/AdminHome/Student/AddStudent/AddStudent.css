@@ -1,0 +1,49 @@
+.AddStudent-main-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.Student-work{
+    height: 100%;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.header{
+    font-size: 2rem;
+    font-family: 'Segoe UI';
+    text-align: center;
+}
+
+.Student-table{
+    padding: 1.3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.labels{
+    text-align: right;
+    padding: 6px;
+    font-size: 1.4rem;
+}
+
+input{
+    padding: 6px;
+    height: 2rem;
+    width: 15rem;
+}
+
+.Student-view{    
+    font-size: 1.3rem;
+    align-items: center;
+    justify-content: center;
+    scroll-behavior: smooth;
+    overflow: scroll;
+}
+
+.table{
+    overflow: scroll;
+}

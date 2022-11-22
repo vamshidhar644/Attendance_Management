@@ -1,0 +1,144 @@
+.main-container{
+  width: 90vw;
+  
+}
+
+.navbar{
+    padding: 1rem 1rem;
+    border-bottom: 3px solid black;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.navbar-nav{
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.title-btn{
+  background-color: #444e4e52;
+  text-decoration: none;
+  height: 2rem;
+  padding: 5px;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  border-radius: 5px;
+}
+
+.title-btn:hover, .left-btns:hover{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.dropdown{
+  position: fixed;
+  top: 70px;
+  list-style: none;
+  width: 200px;
+  background-color: #444e4e52;
+  border-radius: 3px;
+  overflow: hidden;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+
+.dropdown .dropdown-item{
+  padding: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.dropdown .dropdown-item:hover{
+  cursor: pointer;
+  background-color: aliceblue;
+}
+
+.menu-items{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+
+.menu-items:hover{
+  background-color: white;
+  cursor: pointer;
+}
+
+.profile{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 2rem;
+
+}
+
+.left-btns{
+  background-color: #444e4e52;
+  text-decoration: none;
+  width: fit-content;
+  height: 2rem;
+  padding: 5px;
+  margin: 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  border-radius: 5px;
+}
+
+.body-container{
+  width: 100%;
+  height: 80vh;
+  padding: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+}
+
+.duty{
+  background-color: white;
+  height: 100%;
+  border: 2px solid black;
+  overflow: hidden;
+  display: flex;
+  padding: 5px;
+}
+
+.attandance-table{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.mark{
+  width: 2rem;
+}
+
+table{
+  border: 1px solid black;
+
+}
+
+.txtAttnd{
+  width: 8rem;
+}
+
+.head-student{
+  text-align: center;
+  width: 11rem;
+}
+
+#iMark{
+  width: 8rem;
+}

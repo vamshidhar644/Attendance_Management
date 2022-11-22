@@ -1,0 +1,84 @@
+body{
+    /* background-image: url('Assets/Login/back_bg.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home-body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.top-head{
+    margin-bottom: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+.App{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3em;
+    box-shadow: 0 0.3em 1.550em rgb(31, 32, 29);
+    background-image: url('Assets/Login/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30em;
+    height: 20em;
+  }
+  
+  .App h3{
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 3px;
+    color: white;
+  }
+  
+  .buttons{
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .btn{
+    width: 5rem;
+    padding: 3px;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1rem;
+    gap: 1rem;
+    background-color: white;
+    border-radius: 50%;
+    padding: 1rem;
+    width: 7rem;
+    height: 7rem;
+    cursor: pointer;
+    transition: 0.7s;
+  }
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0.188em 1.550em rgb(9, 103, 226);
+  }
+
+  .icon{
+    font-size: 2rem;
+  }
+
+  .myname{
+    color: white;
+  }

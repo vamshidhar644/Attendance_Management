@@ -1,0 +1,60 @@
+.att-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.todaydate{
+    width: 10rem;
+}
+
+table{
+    align-items: center;
+    justify-content: center;
+}
+
+th {
+    padding: 0.5em 1em;
+}
+
+.head{
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+td {
+    border-top: 1px solid #eee;
+    padding: 0.5em 1em;
+}
+
+input {
+    cursor: pointer;
+}
+
+td.attend-col{
+    width: 3rem;
+}
+
+/* Column types */
+th.missed-col {
+    background-color: green;
+}
+
+td.missed-col {
+    background-color: #ffecec;
+    color: green;
+    text-align: center;
+}
+
+.name-col {
+    text-align: left;
+}
+
+.contain-1{
+    width: 40rem;
+    padding: 8rem;
+}
+
+select{
+    width: 10rem;
+}
