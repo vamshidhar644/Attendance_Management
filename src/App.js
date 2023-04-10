@@ -1,26 +1,40 @@
-import './App.css';
-import {Routes, Route} from 'react-router-dom';
-import AdminLogin from './ProjectComponents/Logins/AdminLogin/AdminLogin';
-import FacultyLogin from './ProjectComponents/Logins/FacultyLogin/FacultyLogin';
-import StudentLogin from './ProjectComponents/Logins/StudentLogin/StudentLogin';
-import Home from './Home'
-import AdminHome from './ProjectComponents/HomePages/AdminHome/AdminHome'
-import FacultyHome from './ProjectComponents/HomePages/FacultyHome/FacultyHome'
-import StudentHome from './ProjectComponents/HomePages/StudentHome/StudentHome'
-// import MyComponent from './ProjectComponents/Test/MyComponent'
+import { useNavigate } from 'react-router';
+import './Home.css';
+import {RiAdminLine} from 'react-icons/ri'
+import {GiTeacher} from 'react-icons/gi'
+import {FaUserGraduate} from 'react-icons/fa'
+import Navibar from './ProjectComponents/Navbar';
 
-export default function App() {
+export default function App() {  
+  const navigate = useNavigate();
+
+  function ToAdmin(){
+      navigate("/admin")
+  }
+  function ToFaculty(){
+      navigate("/faculty")
+  }
+  function ToStudent(){
+      navigate("/student")
+  }
   return (
-    <div>
-      <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/admin' element={<AdminLogin/>}/>
-        <Route path='/faculty' element={<FacultyLogin/>}/>
-        <Route path='/student' element={<StudentLogin/>}/>
-        <Route path='/AdminHome' element={<AdminHome/>}/>
-        <Route path='/FacultyHome' element={<FacultyHome/>}/>
-        <Route path='/StudentHome' element={<StudentHome/>}/>
-      </Routes>
+    <div className="App">
+      <h3>Login as:</h3>
+      <div className='buttons'>
+          <div className='card admin' onClick={ToAdmin}>
+            <RiAdminLine className='icon'/>
+            <h5>ADMIN</h5>
+          </div>
+          <div className='card faulty' onClick={ToFaculty}>
+            <GiTeacher className='icon'/>
+            <h5>FACULTY</h5>
+          </div>
+          <div className='card student' onClick={ToStudent}>
+            <FaUserGraduate className='icon'/>
+            <h5>STUDENT</h5>
+          </div>
+      </div>
+      <h2 className='myname'> VAMSHIDHAR DAWOOR</h2>
     </div>
   );
 }
